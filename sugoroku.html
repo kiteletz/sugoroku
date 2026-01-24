@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>よいこのスタートレックすごろく</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+</head>
+<body>
+
+    <h1>よいこのスタートレックすごろく</h1>
+
+    <div id="setup-screen">
+        <div id="setup-inner">
+            <h2>モード設定</h2>
+            <label>
+                <input type="radio" name="num" value="1">
+                個人モード
+            </label><br>
+            <label>
+                <input type="radio" name="num" value="2" checked>
+                対戦モード
+            </label><br><br>
+
+            <h2>順番設定</h2>
+            <label>
+                <input type="radio" name="you" value="1st" checked>
+                先攻
+            </label><br>
+            <label>
+                <input type="radio" name="you" value="2nd">
+                後攻（対戦モードでのみ有効）
+            </label><br>
+            <label>
+                <input type="radio" name="you" value="none" checked>
+                観戦のみ（デモプレイ）
+            </label><br><br>
+            
+            <h2>難易度設定</h2>
+            <label>
+                <input type="radio" name="lev" value="6">
+                候補生
+            </label><br>
+            <label>
+                <input type="radio" name="lev" value="15" checked>
+                大佐
+            </label><br>
+            <label>
+                <input type="radio" name="lev" value="30" checked>
+                Ｑ
+            </label><br><br>
+
+            <button id="start-game">エンゲージ！</button>
+        </div>
+    </div>
+
+    <div id="dice-and-panel">
+        <div id="dice" onclick="rollDice()">?</div>
+        <div id="data-panel">
+            <div id="player-info"></div>
+            <div id="message">サイコロを振りましょう！</div>
+        </div>
+    </div>
+    
+    <div id="board"></div>
+    
+    <!-- 外部スクリプト読み込み（順序大事！） -->
+    <script src="min/updateUI.js"></script>
+    <script src="min/player-setup.js"></script>
+    <script src="min/showMessage.js"></script>
+    <script src="min/setNextTurn.js"></script>
+    <script src="min/resolveEventMovement.js"></script>
+    <script src="min/showPlayerInfo.js"></script>
+    <script src="min/config.js"></script>
+    <script src="min/player.js"></script>
+    <script src="min/events.js"></script>
+    <script src="min/event-handler.js"></script>
+    <script src="min/movement-core.js"></script>
+    <script src="min/onMoveComplete.js"></script>
+    <script src="min/dice.js"></script>
+    <script src="min/board.js"></script>
+    <script src="min/game.js"></script>
+
+</body>
+</html>

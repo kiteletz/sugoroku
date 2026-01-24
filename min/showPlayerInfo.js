@@ -1,0 +1,1 @@
+function showPlayerInfo(n){var e=window.currentPlayer,t=[""+e.name];if(n){n=n.status||"";n&&t.push("："+n)}else{var n=e.position%6+1,s=Math.floor(e.position/6)+1;t.push(` (${n}, ${s})`),console.log(`player = ${e.name}, (${n}, ${s})`);let o="";n=window.events?.[e.position];n&&(o=e.nextMessage&&n.status||n.location)&&t.push("："+o)}window.playerInfo.textContent=t.join("")}
