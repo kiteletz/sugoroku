@@ -1,1 +1,1 @@
-let CONFIG={random:"",totalCells:35,eventMax:20,playerSize:4,moveDuration:450,rows:5,cols:6,autoPlayers:[0],autoDelayMs:2e3,autoEnabled:!0};window.CONFIG=CONFIG;
+let CONFIG={random:"",goalIndex:35,cols:6,eventMax:20,moveDuration:450,autoDelayMs:2e3,autoEnabled:!0};window.CONFIG=CONFIG;

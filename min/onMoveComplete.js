@@ -1,1 +1,1 @@
-function onMoveComplete(o){(window.currentPlayer.position=o)===window.CONFIG.totalCells?(showPlayerInfo({}),window.message.textContent="おめでとう！　ゴールしました！🌏",rollDice(void 0,!1,!1)):(setNextTurn(),window.isTurnProcessing=!1)}window.onMoveComplete=onMoveComplete;
+function onMoveComplete(o){(window.currentPlayer.position=o)===window.CONFIG.goalIndex?(showPlayerInfo({}),window.message.textContent="おめでとう！　ゴールしました！🌏",rollDice(void 0,!1,!1)):(setNextTurn(),window.isTurnProcessing=!1)}window.onMoveComplete=onMoveComplete;
