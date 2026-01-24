@@ -1,6 +1,5 @@
 #board {
     display: grid;
-/*	grid-template-columns: repeat(6, 1fr); */
 	grid-template-columns: repeat(var(--cols, 6), 1fr); /* CSS変数 */
     gap: 20px; /* マス同士の間隔 */
     width: 100%; /* 画面幅に合わせる */
@@ -271,7 +270,7 @@
 	animation: pulse-glow 1.5s infinite;
 }
 
-/* === 宇宙背景（スタートレック風）=== */
+/* === 宇宙背景=== */
 body {
 	font-family: Arial, sans-serif;
 	text-align: center;
@@ -286,7 +285,7 @@ body {
 
 h1 {
     color: #ffffff;                  /* 白 */
-    text-shadow: 0 0 15px #00aaff,    /* 青い光輝（スタートレック風） */
+    text-shadow: 0 0 15px #00aaff,
                  0 0 30px #0088ff;
     font-size: 36px;
     margin-bottom: 20px;
@@ -298,7 +297,7 @@ h1 {
 	}
 }
 
-/* データ表示ウィンドウ（LCARS風） */
+/* データ表示ウィンドウ */
 #data-panel {
 	flex: 1 1 auto;                /* 残りスペースを埋める */
 	min-width: 300px;              /* 内容が増えても狭くなりすぎない */
@@ -332,7 +331,7 @@ h1 {
 
 
 
-/* === 設定画面（スタートレック風ポップアップ） === */
+/* === 設定画面=== */
 #setup-screen {
     position: fixed;
     inset: 0;
@@ -421,7 +420,6 @@ h1 {
 
     #data-panel {
         flex: 1;
-/*        height: 70px;          */    /* ← ここ！ 高さをサイコロと同じに強制固定 */
         min-height: 100px;
         max-height: 100px;          /* 高さが伸びないように上限も固定 */
         min-width: 90vw;
