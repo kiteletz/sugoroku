@@ -40,23 +40,23 @@
 	color: #ff0000;               /* 鮮やかな赤 */
 	text-shadow: 2px 2px 4px #880000;
 	position: absolute;
-	left: 85%;                   /* マスの右側 */ 
+	left: 100%;                   /* マスの右側 85% */ 
 	top: 50%;
 	transform: translateY(-50%); 
-	margin-left: 10px;            /* 間隔調整 */
+	margin-left: 0px;            /* 間隔調整 * 10px/
 	pointer-events: none;         /* クリック干渉なし */
 }
 /* down の場合：下側に配置 + 90度回転 */
 .cell.dir-down::after {
-    left: 50%;
-    top: 75%; /* マスの下側 */
-    transform: translateX(-50%) rotate(90deg);  /* 90度回転で下向きに */
-    margin-top: 10px;   /* 間隔調整 */
-    margin-left: 0;
+	left: 50%;
+	top: 75%; /* マスの下側 */
+	transform: translateX(-50%) rotate(90deg);  /* 90度回転で下向きに */
+	margin-top: 10px;   /* 間隔調整 */
+	margin-left: 0;
 }
 /* 行の最後のマスには矢印なし */
 .cell.goal::after {
-    display: none;
+	display: none;
 }
 
 .start { background-color: #90ee90; }
@@ -107,7 +107,7 @@
 	}
 	/* right（右側） */
 	.cell::after {
-		right: -12px;             /* マスの右外側に固定距離 */
+		right: -15px;             /* マスの右外側に固定距離 -12px */
 		top: 50%;
 		transform: translateY(-50%);
 	}
